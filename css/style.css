@@ -1,5 +1,11 @@
 body {
 	margin: 0;
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-family: "Arial Black", Gadget, sans-serif;
+	width: auto;
 }
 
 div{
@@ -8,12 +14,123 @@ div{
 	text-align: center;
 }
 
+h1 {
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+p {
+	float: left;
+}
 
 form {
 	width: 80%;
-	height: 300px;
 	margin: 0;
 	display: inline-block;
-	background-color: aqua;
+	position: relative;
+	background-color: white;
+	box-shadow: 0px 0px 8px 10px rgba(6, 6, 6, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.7;
+	color: black;
 }
 
+#form-2 {
+	margin-bottom: 100px;
+}
+
+input {
+	width: 70%;
+	height: 40px;
+	text-align: center;
+	background-color: whitesmoke;
+	color: black;
+	border: none;
+	margin: 8px;
+}
+
+input:hover {
+	background-color: gainsboro;
+}
+
+.checkBox {
+	display: inline-block;
+	width: 30px;
+	height: 15px;
+	float: left;
+	margin: 17px;
+}
+
+select {
+	width: 70%;
+	height: 40px;
+	text-align: center;
+	background-color: whitesmoke;
+	margin: 8px;
+	border: none;
+}
+
+select:hover{
+	background-color: gainsboro;
+}
+
+textarea {
+	width: 90%;
+	height: 120px;
+	text-align: left;
+	background-color: whitesmoke;
+	color: black;
+	margin: 8px;
+	border: none;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+textarea:hover{
+	background-color: gainsboro;
+}
+
+button {
+	width: 90%;
+	height: 40px;
+	text-align: center;
+	background-color: lawngreen;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 8px;
+	color: white;
+	font-size: 20px
+}
+
+button:hover {
+	background-color: darkgreen;
+}
+
+#buttonDone{
+	background-color: darkseagreen;
+}
+
+#buttonDone:hover{
+	background-color: darkslategrey;
+}
+
+#buttonNo{
+	background-color: mediumvioletred;
+}
+
+#buttonNo:hover{
+	background-color: darkred;
+}
+
+
+i {
+	width: 19%;
+	font-size: larger;
+	margin-left: 15px;
+	text-align: center;
+}
+
+.buttonColumn-2 {
+	width: 40%;
+}
