@@ -4,43 +4,96 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fontAwesome/userFont/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fontAwesome/password/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fontAwesome/email/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fontAwesome/phone/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fontAwesome/map/css/font-awesome.min.css">
 </head>
 
 <body>
-<!--druga kolumna  -->
+<!--lewa kolumna  -->
 	<div id="column-1">
-
+<!--pierwszy formularz 4x input, select, checkbox i przycisk-->
 		<h1>Register Form</h1>
 		<form id="form-1" action="submit">
+		
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<input type="text" name="userName" placeholder="Username">
+			<i class="fa fa-lock" aria-hidden="true"></i>
+			<input type="password" name="password" placeholder="Password">
+			<i class="fa fa-lock" aria-hidden="true"></i>
+			<input type="password" name="confirmPassword" placeholder="Confirm Password">
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<input type="email" placeholder="E-mail">
+			<i class="fa fa-map-marker" aria-hidden="true"></i>
+			<select name="destonation">
+				<option value="Warszawa">Warszawa</option>
+				<option value="Wrocław">Wrocław</option>
+				<option value="Kraków">Kraków</option>
+				<option value="Opole">Opole</option>
+			</select>
 
+			<input class="checkBox" type="checkbox">
+			<p>Have read and accept term of use</p>
+			<button type="button">Sign up</button>
+			
 		</form>
 
 		<h1>Send Email </h1>
-
+<!--drugi formularz 2x input, textarea-->
 		<form id="form-2" action="submit">
-
-
+		
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<input type="text" name="userName" placeholder="Username">
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<input type="password" name="password" placeholder="Password">
+			<textarea rows="4" cols="50" placeholder="Descrvbe yourself here...">
+			</textarea>
+			
+			<button type="button">Send e-mail</button>
+			
 		</form>
 
 	</div>
 
-<!--pierwsza kolumna-->
+<!--prawa kolumna-->
 	<div id="column-2">
 		<h1>Sign In Form</h1>
-
+<!--trzeci formularz 2xinput, checkbox, button-->
 		<form id="form-3" action="submit">
+		
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<input type="text" name="userName" placeholder="Username">
+			<i class="fa fa-lock" aria-hidden="true"></i>
+			<input type="password" name="password" placeholder="Password">
+
+			<input class="checkBox" type="checkbox">
+			<p>Remember me </p>
+
+			<button type="button" class="buttonColumn-2">Sing in</button>
 
 		</form>
 
 		<h1>Recover Form</h1>
-
+		
 		<form id="form-4" action="submit">
-
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<input type="text" name="userName" placeholder="Enter your Emil">
+			<i class="fa fa-mobile" aria-hidden="true"></i>
+			<input type="password" name="password" placeholder="Enter your Phone number">
+			<button type="button" class="buttonColumn-2">Send</button>
+			<button id='buttonDone' type="button" class="buttonColumn-2">Done</button>
 		</form>
 
 		<h1>Subscribe Form</h1>
 
 		<form id="form-5" action="submit">
+		
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<input type="password" name="confirmPassword" placeholder="Enter your Emil">
+			<button type="button" class="buttonColumn-2">Subscribe</button>
+			<button id='buttonNo' type="button" class="buttonColumn-2">No, Thanks</button>
 
 		</form>
 
